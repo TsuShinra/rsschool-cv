@@ -1,1 +1,1 @@
-# rsschool-cv
+https://TsuShinra.github.io/rsschool-cv/cv
