@@ -1,5 +1,72 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(src/oboik.ru_34543.jpg);
+    background-size: 100%;
+    color: antiquewhite;
+}
+h1 {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 51px;
+    color: rgb(207, 196, 230);
+    padding: 25px 0 0 30px;
+    margin-bottom: 35px; 
+    text-align: center;
+}
+.cv-container {
+
+    max-width: 1024px;
+
+}
+
+
+.image-container {
+    z-index: 1;
+    display: block;
+    filter: blur(2px);
+    opacity: 60%;
+    max-width: 1024px;
+}
+.image-container > img {
+    width: 1024px;
+}
+.text-container {
+    z-index: 44;
+    max-width: 1024px;
+}
+.text-container > img {
+    height: 325px;
+    float: right;
+}
+ol {
+    padding-left: 25px;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+li {
+    line-height: 24px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+a {
+    color:cyan;
+}
+footer {
+    z-index : 99;
+    color: #b69161da;
+    opacity: 85%;
+}
+.footer-div{
+    max-width: 1024px;
+    display:flex;
+    align-content: space-between;
+}
+.rs-logo {
+    height: 20px;
+    background-color: azure;
 }
