@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Pykhova A. CV</title>
+    <script src='http://yastatic.net/highlightjs/8.2/highlight.min.js'/></script>
+    <script type='text/javascript'>hljs.initHighlightingOnLoad();</script>
+    <link href='http://yastatic.net/highlightjs/8.2/styles/solarized_light.min.css' rel='stylesheet'/>
 </head>
+
 <body>
     <div class="main-wrapper">
         <header>
             <div class="header-wrapper">
-                <div class="name">
-                    <h3>Alisa Pykhova</h3>
-                    <h6>Juniour Front-end Developer</h6>
-                </div>
                 <nav class="navigation">
                     <ul class="main-nav">
-                        <li>Introduction</li>
-                        <li>Skills</li>
-                        <li>Experience</li>
-                        <li>Education</li>
-                        <li>Code-example</li>
-                        <li>Languages spoken</li>
-                        <li>Contacts</li>
+                        <li><a href="#intro">Introduction</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#exp">Experience</a></li>
+                        <li><a href="#edu">Education</a></li>
+                        <li><a href="#codeex">Code-example</a></li>
+                        <li><a href="#lang">Languages spoken</a></li>
+                        <li><a href="#">Contacts</a></li>
                     </ul>
-                    </nav>
+                </nav>
             </div>
         </header>
         <main>
             <aside>
-                <figure class="photo">
-                    <img src="./src/img/Photo_me.jpg" alt="there should be a photo">
+                <div class="name">
+                    <h3>Alisa Pykhova</h3>
+                    <h6>Juniour Front-end Developer</h6>
+                </div>
+                <figure>
+                    <img src="./src/img/Photo_me.jpg" alt="there should be a photo" class="photo">
                 </figure>
                 <article class="contacts">
                     <ul class="c-line">
@@ -43,14 +47,62 @@
                 </article>
                 <article class="skills"></article>
             </aside>
-            <section class="introduct"></section>
-            <section class="exp"></section>
-            <section class="edu"></section>
-            <section class="code"></section>
-            <section class="lang"></section>
+            <section class="introduct">
+                <h3 id="intro">Introduction</h3>
+                <article>Last year I've desided that there is a need for change,
+                    so I chose to take a new step and become a Front-End developer.
+                    This is what amuses me in front-end: you can see the result of your
+                    work as soon as you fix or change it. Although my Back-End
+                    developer-friends say that 'moving pixels' around is quite boring,
+                    I am never bored with this process. It encourages me to learn more
+                    and more every day.</article>
+            </section>
+            <section class="exp">
+                <h3 id="exp">Experience</h3>
+                <article>HTML course project and several layouts I did for fun for my hobby projects.</article>
+            </section>
+            <section class="edu">
+                <h3 id="edu">Education</h3>
+                <article>Got admitted to Faculty of Computational Mathematics and Cybernetics
+                    in 2003, dropped after 1 year, transfering to Sociology faculty, which I
+                    succesfully graduated in 2009. After that was working mainly in
+                    localization industry, in LogrusIT LLC. Now I plan to move on and return
+                    to my long-forgotten programming dreams.</article>
+            </section>
+            <section class="code">
+                <h3 id="codeex">Code Example</h3>
+                <article>
+
+                    <h5>Codewars: The wheat/rice and chessboard problem</h5>
+                    <pre><code>
+                        function squaresNeeded(grains) {
+                            const arr = [0];
+                            for (let i = 0; i < 63; i++) {
+                                arr.push(Math.pow(2, i))
+                            }
+                            for (let i = 0; i < 63; i++) {
+                                if (grains < arr[i]) {
+                                return i-1}
+                            }
+                        }</code></pre>
+                </article>
+            </section>
+            <section class="lang">
+                <h3 id="lang">Languages</h3>
+                <article>English is my main spoken language at work nowadays, so I'm 
+                    a frequent and confident user, probably the level is C1, but I 
+                    never took any tests after University, as there was no need. I also 
+                    speak and understand basic French (B1), and have basic knowledge of 
+                    Spanish and Korean languages.</article>
+            </section>
         </main>
         <footer>
-            <div class = "footer-div"><a href="https://github.com/TsuShinra/"><i class="fab fa-github"></i> TsuShinra</a>Created in 2021 <div><img class="rs-logo" src="src/img/rs_school_js.svg"><a href="https://rs.school/js/">JavaScript/Front-end</a></div> </div></footer>
-        </div>
+            <div class="footer-div"><a href="https://github.com/TsuShinra/"><i class="fab fa-github"></i>
+                    TsuShinra</a>Created in 2021 <div><img class="rs-logo" src="src/img/rs_school_js.svg"><a
+                        href="https://rs.school/js/">JavaScript/Front-end</a></div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

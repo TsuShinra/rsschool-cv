@@ -4,63 +4,44 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url(src/oboik.ru_34543.jpg);
-    background-size: 100%;
-    color: antiquewhite;
+    background-color: #f2f1ef;
 }
-h1 {
-    font-size: 44px;
-    font-weight: 600;
-    line-height: 51px;
-    color: rgb(207, 196, 230);
-    padding: 25px 0 0 30px;
-    margin-bottom: 35px; 
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+aside {
+    float: left;
+    background-color: #e2ae6c;
+    padding: 1rem;
+    height: 100%;
+}
+.name {
     text-align: center;
 }
-.cv-container {
-
-    max-width: 1024px;
-
+.photo {
+    width: 15rem;
+    height: auto;
 }
-
-
-.image-container {
-    z-index: 1;
-    display: block;
-    filter: blur(2px);
-    opacity: 60%;
-    max-width: 1024px;
-}
-.image-container > img {
-    width: 1024px;
-}
-.text-container {
-    z-index: 44;
-    max-width: 1024px;
-}
-.text-container > img {
-    height: 325px;
-    float: right;
-}
-ol {
-    padding-left: 25px;
-    margin: 15px;
-    padding-bottom: 20px;
-}
-li {
-    line-height: 24px;
-    font-size: 20px;
-    margin-bottom: 5px;
+h3 {
+    color: #6e304b;
 }
 a {
-    color:cyan;
+    color: #a37c82;
+}
+section {
+    margin: 5rem 20rem;
+}
+.introduct {
+    margin-top: 3rem;
 }
 footer {
     z-index : 99;
     color: #b69161da;
     opacity: 85%;
 }
+
 .footer-div{
     max-width: 1024px;
     display:flex;
