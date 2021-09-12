@@ -14,13 +14,8 @@ header {
     padding: 2rem 1rem;
 }
 
-.main-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.wrapper {
-    display: flex;
+i {
+    color: #22161c;
 }
 
 aside {
@@ -28,24 +23,23 @@ aside {
     padding: 1rem;
 }
 
-.name {
-    text-align: center;
-}
-
-.photo {
-    width: 15rem;
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
 h2,
 h3 {
     color: #6e304b;
 }
+
+h3 {
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
 ul {
     list-style-type: none;
 }
+
 a {
     color: #a37c82;
     text-decoration: none;
@@ -60,7 +54,40 @@ article {
 }
 
 section {
-    margin: 5rem 20rem;
+    padding: 5rem 15rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+footer {
+    z-index: 99;
+    background-color: #e2ae6c;
+    color: #a37c82;
+    padding: 2rem 1rem;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.name {
+    text-align: center;
+}
+
+.photo {
+    width: 15rem;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rs-logo {
+    margin-right: 0.5rem;
 }
 
 .main-block {
@@ -81,14 +108,7 @@ section {
 }
 
 .introduct {
-    margin-top: 2rem;
-}
-
-footer {
-    z-index: 99;
-    background-color: #e2ae6c;
-    color: #a37c82;
-    padding: 2rem 1rem;
+    margin-top: 1rem;
 }
 
 .skills {
@@ -98,7 +118,7 @@ footer {
 .footer-div {
     max-width: 1024px;
     display: flex;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .rs-logo {
@@ -106,6 +126,11 @@ footer {
     background-color: azure;
 }
 
-i {
-    color: black;
+.introduct, .exp, .edu, .code, .contacts {
+    border-bottom: 4px double #6e304b;
+}
+
+.contacts {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
