@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <link href='http://yastatic.net/highlightjs/8.2/styles/solarized_light.min.css' rel='stylesheet' />
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/base16/solarized-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script> -->
 </head>
 
 <body>
@@ -73,12 +75,12 @@
                             and more every day.</p>
                     </section>
                     <section class="exp2">
-                        <a  id="exp" class="anchor100"></a>
+                        <a id="exp" class="anchor100"></a>
                         <h3>Experience</h3>
                         <p>HTML course project and several layouts I did for fun for my hobby projects.</p>
                     </section>
                     <section class="edu">
-                        <a  id="edu" class="anchor100"></a>
+                        <a id="edu" class="anchor100"></a>
                         <h3>Education</h3>
                         <p>Got admitted to Faculty of Computational Mathematics and Cybernetics
                             in 2003, dropped after 1 year, transfering to Sociology faculty, which I
@@ -92,9 +94,20 @@
                         <p>
 
                             <h5>Codewars: The wheat/rice and chessboard problem</h5>
-                            <pre><code>
-                                <script src='http://yastatic.net/highlightjs/8.2/highlight.min.js'/></script>
-                                <script type='text/javascript'>hljs.initHighlightingOnLoad();</script>
+                            <div class="scrolling-wrapper">
+                                <div class="javascript"><ol><li class="li1"><div class="de1"><span class="kw2">function</span> squaresNeeded<span class="br0">&#40;</span>grains<span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; <span class="kw2">const</span> arr <span class="sy0">=</span> <span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span><span class="sy0">;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span>let i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">63</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; &nbsp; arr.<span class="me1">push</span><span class="br0">&#40;</span>Math.<span class="me1">pow</span><span class="br0">&#40;</span><span class="nu0">2</span><span class="sy0">,</span> i<span class="br0">&#41;</span><span class="br0">&#41;</span></div></li>
+                                    <li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; <span class="kw1">for</span> <span class="br0">&#40;</span>let i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">63</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>grains <span class="sy0">&lt;</span> arr<span class="br0">&#91;</span>i<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; <span class="kw1">return</span> i<span class="sy0">-</span><span class="nu0">1</span><span class="br0">&#125;</span></div></li>
+                                    <li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp;<span class="br0">&#125;</span></div></li>
+                                    <li class="li2"><div class="de2">&nbsp; <span class="br0">&#125;</span></div></li>
+                                    </ol></div>
+                            </div>
+                            <!-- <pre><code class="javascript">
     function squaresNeeded(grains) {
         const arr = [0];
         for (let i = 0; i < 63; i++) {
@@ -104,12 +117,13 @@
             if (grains < arr[i]) {
                 return i-1}
         }
-    }</code></pre>
+    }</code></pre> -->
                             <br>
                             <a href="https://github.com/TsuShinra/html_course_1/">First HTML Layout attempt; </a>
                             <br>
-                            <a href="https://github.com/TsuShinra/Test_project_for_Leonid/">Tiny flutter test project;</a>
-                        </article>
+                            <a href="https://github.com/TsuShinra/Test_project_for_Leonid/">Tiny flutter test
+                                project;</a>
+                            </article>
                     </section>
                     <section class="lang">
                         <a id="lang" class="anchor100"></a>
@@ -136,7 +150,7 @@
         </footer>
     </div>
     <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
-    <script src="cv.js"></script> 
+    <script src="cv.js"></script>
 </body>
 
 </html>
